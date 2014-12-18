@@ -1,0 +1,122 @@
+---
+layout:   default
+title:    "documents layout"
+category: documents
+---
+
+<!-- main -->
+  <section
+    id="documents"
+    class="
+      container-fliud
+      text-center
+      doc-cover
+      doc-brown
+      " role="main">
+    <h1>
+      <span class="glyphicon glyphicon-book"></span>
+      documents
+    </h1>
+    <p class="lead">プロジェクト資料一覧</p>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div id="content" class="col-md-8">
+        {{ content }}
+      </div>
+
+      <div class="col-md-4">
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-brown
+            ">資料</p>
+
+          {% for post in site.categories.documents %}
+          <a href="{{ post.url }}" class="list-group-item">
+            {{ post.title }}
+          </a>
+          {% endfor %}
+
+          <a
+            href="#"
+            target="_blank"
+            class="list-group-item">
+            用語集（公開前）
+          </a>
+
+          <a
+            href="#"
+            target="_blank"
+            class="list-group-item">
+            希望提出物一覧（公開前）
+          </a>
+        </div>
+
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-brown
+            ">PDF資料</p>
+
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-brown
+            ">受注前PDF資料</p>
+
+          <a
+            href="/assets/pdf/other/roles.20140506.pdf"
+            target="_blank"
+            class="list-group-item">
+            運用体制について
+          </a>
+
+          <a
+            href="/assets/pdf/other/netwrok-diagram.20140822.pdf"
+            target="_blank"
+            class="list-group-item">
+            Netwrok Diagram
+          </a>
+
+          <a
+            href="/assets/pdf/other/system-agreement.20140609.pdf"
+            target="_blank"
+            class="list-group-item">
+            System Agreement
+          </a>
+
+          <a
+            href="/assets/pdf/other/data-security.20140506.pdf"
+            target="_blank"
+            class="list-group-item">
+            Data Security and Privacy
+          </a>
+
+          <a
+            href="/assets/pdf/other/process-list.20140509.pdf"
+            target="_blank"
+            class="list-group-item">
+            成果物一覧
+          </a>
+        </div>
+
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-brown
+            ">打ち合わせ資料</p>
+          {% for post in site.categories.meeting %}
+          <a href="{{ post.url }}" class="list-group-item">
+            {{ post.title }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>

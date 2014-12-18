@@ -1,0 +1,9 @@
+.DS_Store
+.sass-cache
+
+public/vendor/*
+public/js/*
+public/doc/*
+public/test/*
+public/spec/*
+public/coverage/*

@@ -1,0 +1,157 @@
+$icon-font-path: "/vendor/bootstrap-sass/fonts/"
+
+$navbar-height:                           50px
+
+$ag-text:                                 #313233
+$ag-bg:                                   #F3F5F8
+
+$ag-blue:                                 #0B318F
+$ag-skyblue:                              #00A7EA
+$ag-yellow:                               #EBDF00
+$ag-brown:                                #8F6A0B
+$ag-gray:                                 #4D4E52
+
+$gray-darker:                             lighten($ag-text, 13.5%)
+$gray-dark:                               lighten($ag-text, 0%)
+$gray:                                    lighten($ag-text, 33.5%)
+$gray-light:                              lighten($ag-text, 46.7%)
+$gray-lighter:                            lighten($ag-text, 93.5%)
+
+$navbar-default-bg:                       $ag-bg 
+$navbar-margin-bottom:                    0px 
+$navbar-border-radius:                    0px
+
+$navbar-default-link-color:               $ag-gray
+
+@import '../../vendor/bootstrap-sass/lib/bootstrap.scss'
+
+.navbar-brand
+  height: 50px
+
+/* sassメモすること
+ * 連想配列 sass
+ * 配列
+ * @each
+ * @if
+ * 可変長引数
+ * @for
+ */
+
+/* html5 override */
+object
+  pointer-events: none
+
+/* bootstrap override */
+.glyphicon
+  padding-right: 0.1em
+  margin-left: -0.2em
+
+/* doc.anagift.com */
+.svg-link-enable
+  display: inline-block
+
+/* common */
+.mgn-bottom
+  margin-bottom: 2em
+
+
+/* color */
+$color-array: (blue: $ag-blue, brown: $ag-brown, yellow: $ag-yellow, gray: $ag-gray, skyblue: $ag-skyblue)
+
+@each $color-name, $color-value in $color-array
+  .doc-text-#{"" + $color-name}
+    color: $color-value
+
+@each $color-name, $color-value in $color-array
+  .doc-bg-#{"" + $color-name}
+    background-color: lighten($color-value, 52%)
+
+/* extended font */
+body
+  font-family: '游ゴシック','Yu Gothic','YuGothic', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif
+
+.doc-font-serif
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif
+  letter-spacing: 0.01em
+
+/* cover */
+.doc-cover
+  margin-bottom: 2em
+  padding: 100px 0
+  border-bottom-width: 7px
+  border-bottom-style: solid
+
+.brand-cover
+  margin-bottom: 50px
+
+=doc-cover-bg($darker, $lighter: lighten($darker, 40%))
+  +gradient-directional($lighter, $darker, 150deg)
+  color: white
+  border-bottom-color: $darker
+
+=doc-cover-bg-text-inverse($darker, $lighter: lighten($darker, 40%))
+  +gradient-directional($lighter, $darker, 150deg)
+  color: darken($darker, 30%)
+  border-bottom-color: $darker
+
+.home-icon
+  font-size: 4em
+  margin: 3rem 0 0
+
+.doc-cover.doc-blue
+  +doc-cover-bg($ag-blue, $ag-skyblue)
+
+.doc-cover.doc-brown
+  +doc-cover-bg($ag-brown)
+  
+.doc-cover.doc-yellow
+  +doc-cover-bg-text-inverse($ag-yellow)
+
+.doc-cover.doc-gray
+  +doc-cover-bg($ag-gray)
+
+.doc-cover.doc-skyblue
+  +doc-cover-bg-text-inverse($ag-skyblue)
+
+/* footer */
+.doc-footer
+  margin-top: 3em
+  padding: 2em
+  background-color: $ag-bg
+  border-top: 1px solid lighten($ag-gray, 60%)
+
+/* for Markdown Syntax */
+#content h1
+  font-size: $font-size-h2
+  margin-top: 1em
+  margin-bottom: 1em
+
+#content h2
+  margin-top: 2em
+  font-size: $font-size-h3
+
+#content h3
+  margin-top: 2em
+  font-size: $font-size-h4
+
+#content h4
+  margin-top: 1.5em
+  font-size: $font-size-h4
+
+#content h5
+  margin-top: 1.5em
+  font-size: $font-size-h5
+
+#content h6
+  margin-top: 2em
+  font-weight: bold
+  font-size: $font-size-h5
+
+#content table
+  @extend .table
+
+hr
+  border-color: lighten($ag-gray, 60%)
+  border-style: solid none
+  border-width: 1px 0 0 0
+  margin: 1em 0

@@ -1,0 +1,5 @@
+name: anagift
+description: site for development
+categories: ["logs","documents"]
+peramalink: pretty
+destination: ../public

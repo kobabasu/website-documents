@@ -1,0 +1,151 @@
+---
+layout: default
+title:  "home"
+---
+
+<!-- main -->
+<section
+  id="home"
+  class="
+    container-fliud
+    text-center
+    doc-cover
+    doc-blue"
+  role="main">
+  <object
+    id="brand-cover"
+    class="brand-cover"
+    type="image/svg+xml"
+    data="assets/img/brand/brand-cover.svg"
+    width="40%"
+    height="40%">
+    <img src="assets/img/brand/brand-cover.png"
+      width="40%"
+      height="40%"
+      alt="BRAND_LOGO">
+  </object>
+  <p class="lead">
+    プロジェクトに関する資料です<br>
+    必要な資料をご覧ください
+  </p>
+</section>
+
+<!-- content -->
+<div class="container mgn-bottom">
+  <div class="row">
+
+    <div class="col-md-7">
+      {% include "../public/update/2020/01/01/update.html" %}
+    </div>
+
+    <div class="col-md-5">
+      <h2 class="h4">最新追加記事</h2>
+      <p>（PDF資料は表示されません）</p>
+      <table class="table table-default">
+        <tbody>
+        {% for post in site.posts | slice: ":6" %}
+          <tr>
+            <td>{{ post.date | date: "%m月%d日" }}</td>
+            <td>
+              <a href="{{ post.url }}"
+                >{{ post.title }}</a>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+ <!-- thumbnail -->
+ <div id="thumbnail" class="container">
+   <div class="row">
+
+     <div class="col-sm-6 col-md-3">
+       <div class="thumbnail text-center">
+         <span
+           class="
+           glyphicon
+           home-icon
+           glyphicon-book
+           doc-text-brown
+           "></span>
+         <div class="caption text-left">
+           <h3 class="doc-text-brown">documents</h3>
+           <p>
+             プロジェクトの資料一覧です。
+             仕様書や打ち合わせ資料をまとめています
+           </p>
+           <p><a href="/documents.html"
+             >documnetsへ</a></p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-sm-6 col-md-3">
+       <div class="thumbnail text-center">
+         <span
+           class="
+           glyphicon
+           home-icon
+           glyphicon-stats
+           doc-text-skyblue
+           "></span>
+         <div class="caption text-left">
+           <h3 class="doc-text-skyblue">logs</h3>
+           <p>
+             毎週の進捗報告用ページです。
+             各チームごとの作業内容をまとめています
+           </p>
+           <p><a href="/logs.html"
+             >logsへ</a></p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-sm-6 col-md-3">
+       <div class="thumbnail text-center">
+         <span
+           class="
+           glyphicon
+           home-icon
+           glyphicon-link
+           doc-text-yellow
+           "></span>
+         <div class="caption text-left">
+           <h3 class="doc-text-yellow">links</h3>
+           <p>
+             利用する外部サービスへのリンク集です。
+             ログインが必要なものもあります
+           </p>
+           <p><a href="/links.html"
+             >linksへ</a></p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-sm-6 col-md-3">
+       <div class="thumbnail text-center">
+         <span
+           class="
+           glyphicon
+           home-icon
+           glyphicon-wrench
+           doc-text-gray
+           "></span>
+         <div class="caption text-left">
+           <h3 class="doc-text-gray">for developers</h3>
+           <p>
+             開発者用に開発時に必要と思われる資料、
+             マニュアル等をまとめています
+           </p>
+           <p><a href="/developers.html"
+             >for developersへ</a></p>
+         </div>
+       </div>
+     </div>
+
+   </div>
+ </div>

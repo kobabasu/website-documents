@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Documents for anagift</title>
+
+  <link
+    rel="stylesheet"
+    href="/assets/css/style.css"
+    media="all">
+
+  <link
+    rel="stylesheet"
+    href="/vendor/highlightjs/styles/github.css"
+    media="all">
+
+  <script
+    src="/vendor/jquery/dist/jquery.min.js">
+    </script>
+  <script
+    src="/vendor/bootstrap-sass/dist/js/bootstrap.min.js">
+    </script>
+  <script
+    src="/vendor/highlightjs/highlight.pack.js">
+    </script>
+
+  <script type="text/javascript">
+    $(function() {
+      $("a[href^='/assets/pdf/']").attr('target','_blank');
+      hljs.initHighlightingOnLoad();
+    });
+  </script>
+</head>
+
+<body>
+<!-- navbar -->
+  <header
+    id="top"
+    class="navbar navnbar-static-top navbar-default"
+    role="banner">
+
+<!-- navbar for mobile -->
+    <div class="navbar-header">
+      <button
+        class="navbar-toggle collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target=".anagift-collapse">
+
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand svg-link-enable" href="/">
+        <object
+          id="brand"
+          type="image/svg+xml"
+          data="/assets/img/brand/brand.svg"
+          width="130px"
+          height="20px">
+          <img src="/assets/img//brand/brand.png"
+            width="130"
+            height="20"
+            alt="anagift"></object></a>
+    </div>
+
+<!-- navbar menu -->
+    <nav
+      class="collapse navbar-collapse anagift-collapse"
+      role="navigation">
+
+      <ul class="nav navbar-nav">
+        <li id="nav-home">
+          <a href="/index.html">home</a></li>
+        <li id="nav-documents">
+          <a href="/documents.html">documents</a></li>
+        <li id="nav-logs">
+          <a href="/logs.html">logs</a></li>
+        <li id="nav-links">
+          <a href="/links.html">links</a></li>
+        <li id="nav-developers">
+          <a href="/developers.html">for developers</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a
+            href="//www.anagift.com/"
+            target="blank"
+            >anagift</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- content -->
+  
+<!-- main -->
+  <section
+    id="logs"
+    class="
+      container-fliud
+      text-center
+      doc-cover
+      doc-skyblue"
+    role="main">
+    <h1>
+      <span class="glyphicon glyphicon-stats"></span>
+      logs
+    </h1>
+    <p class="lead">毎週の進捗報告</p>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div id="content" class="col-md-8">
+        
+      </div>
+
+      <div class="col-md-4">
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-skyblue
+            ">進捗報告</p>
+          
+          <a href="/logs/2020/01/01/log-001.html" class="list-group-item">
+            進捗報告01
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- footer -->
+  <footer class="doc-footer" role="contentinfo">
+    <div class="container text-center">
+      <a href="/">
+        <object
+          id="brand"
+          type="image/svg+xml"
+          data="/assets/img/brand/brand.svg"
+          width="98px"
+          height="15px">
+          <img src="/assets/img/brand/brand.png"
+            width="98"
+            height="15"
+            alt="anagift">
+        </object>
+      </a><br>
+      <small>
+        <a 
+          href="/"
+          >http://www.anagift.com/</a><br>
+        <a 
+          href="http://getbootstrap.com/"
+          target="_blank"
+          >bootstrap v3.1.1</a><br>
+        <a 
+          href="https://github.com/mattn/jedie"
+          target="_blank"
+          >Jedie</a>
+      </small>
+    </div>
+  </footer>
+
+<!-- javascript -->
+  <script type="text/javascript">
+    $(function() {
+      var page = $('section[role="main"]').attr('id');
+      $('#nav-' + page).addClass('active');
+    });
+  </script>
+</body>
+</html>

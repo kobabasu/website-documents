@@ -1,0 +1,44 @@
+---
+layout:   default
+title:    "logs layout"
+category: logs
+---
+
+<!-- main -->
+  <section
+    id="logs"
+    class="
+      container-fliud
+      text-center
+      doc-cover
+      doc-skyblue"
+    role="main">
+    <h1>
+      <span class="glyphicon glyphicon-stats"></span>
+      logs
+    </h1>
+    <p class="lead">毎週の進捗報告</p>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div id="content" class="col-md-8">
+        {{ content }}
+      </div>
+
+      <div class="col-md-4">
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-skyblue
+            ">進捗報告</p>
+          {% for post in site.categories.logs %}
+          <a href="{{ post.url }}" class="list-group-item">
+            {{ post.title }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,101 @@
+---
+layout:   default
+title:    "developeres layout"
+category: developers
+---
+
+<!-- main -->
+  <section
+    id="developers"
+    class="
+      container-fliud
+      text-center
+      doc-cover
+      doc-gray"
+    role="main">
+    <h1>
+      <span class="glyphicon glyphicon-wrench"></span>
+      for developers
+    </h1>
+    <p class="lead">開発者の方へ</p>
+  </section>
+
+  <section class="container">
+    <div class="panel panel-default">
+      <div id="proverb" class="panel-body h4 doc-font-serif">
+        Good code is its own best documentation. - Jim McCarthy
+      </div>
+
+      <script type="text/javascript">
+        if ($('#proverb') != null) {
+          $.getJSON("/js/json/proverb.json", function(data) {
+            var cnt = 0;
+            setInterval(function(){
+              (proverb.length-1 == cnt)? cnt = 0 : cnt += 1;
+              $('#proverb').text(data[cnt]);
+            },7000);
+          });
+        }
+      </script>
+    </div>
+
+    <div class="row">
+      <div id="content" class="col-md-8">
+        {{ content }}
+      </div>
+
+      <div class="col-md-4">
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-gray
+            ">資料</p>
+
+          <a
+            href="#"
+            target="_blank"
+            class="list-group-item">
+            コーディング規約（公開前）
+          </a>
+
+          {% for post in site.categories.developers %}
+          <a href="{{ post.url }}" class="list-group-item">
+            {{ post.title }}
+          </a>
+          {% endfor %}
+        </div>
+
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-gray
+            ">PDF資料</p>
+
+          <a
+            href="#"
+            target="_blank"
+            class="list-group-item">
+            コーディング規約（公開前）
+          </a>
+        </div>
+
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-gray
+            ">現在公開されているサイト</p>
+
+          <a
+            href="http://{{SITE_URL}}/"
+            target="_blank"
+            class="list-group-item">
+            {{SITE_NAME}}
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>

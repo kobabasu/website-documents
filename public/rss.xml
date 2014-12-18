@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>anagift</title>
+    <link></link>
+    <atom:link rel="self" type="application/rss+xml" href="" />
+    <description></description>
+    <pubDate>Thu, 18 Dec 2014 18:59:00 +0900</pubDate>
+    <lastBuildDate>Thu, 18 Dec 2014 18:59:00 +0900</lastBuildDate>
+    
+    <item>
+      <title>title here</title>
+      <link>/template/2020/01/01/template.html</link>
+      <guid isPermaLink="false">tag:vim-jp.org,2020/00/01:/template/2020/01/01/template.html,rev:1</guid>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
+      <author>vim-jp</author>
+      <description>&#xA;冒頭の数行はjedie用のfront matter記述です。  &#xA;各項目任意の値に書き換え使用してください。&#xA;&#xA;# テンプレート&#xA;**markdownファイル**のテンプレートです。&#xA;&#xA;## 中項目&#xA;&#xA;### 少項目&#xA;------------------------------------------------------------&#xA;少項目のみ罫線をつける&#xA;&#xA;[リンク例][d11]&#xA;&#xA;[d11]: //google.com/ &#34;google&#34;&#xA;</description>
+    </item>
+    
+    <item>
+      <title>トップページのコメント</title>
+      <link>/update/2020/01/01/update.html</link>
+      <guid isPermaLink="false">tag:vim-jp.org,2020/00/01:/update/2020/01/01/update.html,rev:1</guid>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
+      <author>vim-jp</author>
+      <description>&#xA;&lt;div class=&#34;alert alert-danger mgn-bottom&#34;&gt;&#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col-md-3&#34;&gt;&#xA;      &lt;strong&gt;重要なお知らせ: &lt;/strong&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-md-9&#34;&gt;&#xA;      重要なお知らせが入ります&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;#### 今週の主な作業予定&#xA;* 項目1&#xA;* 項目2&#xA;* 項目3&#xA;&#xA;------------------------------------------------------------&#xA;&#xA;#### 先週の主な作業内容&#xA;* 項目1&#xA;* 項目2&#xA;* 項目3&#xA;</description>
+    </item>
+    
+    <item>
+      <title>HTMLコーディング規約</title>
+      <link>/developers/2020/01/01/html-coding.html</link>
+      <guid isPermaLink="false">tag:vim-jp.org,2020/00/01:/developers/2020/01/01/html-coding.html,rev:1</guid>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
+      <author>vim-jp</author>
+      <description>&#xA;# HTMLコーディング規約&#xA;{{ version }}&#xA;&#xA;## ドキュメントに関するルール&#xA;&#xA;### プロトコル表記（http:, https:）の省略 &#xA;&#xA;```&#xA;  &lt;img src=&#34;//google.com/&#34;&gt;&#xA;```&#xA;</description>
+    </item>
+    
+    <item>
+      <title>Markdownについて</title>
+      <link>/developers/2020/01/01/markdown.html</link>
+      <guid isPermaLink="false">tag:vim-jp.org,2020/00/01:/developers/2020/01/01/markdown.html,rev:1</guid>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
+      <author>vim-jp</author>
+      <description>&#xA;# Markdownについて&#xA;このサイトはほとんどのコンテンツを、&#xA;markdown記法で記述されています。&#xA;&#xA;markdown記法は、&#xA;HTMLなどを記述しなくとも&#xA;基本的な文章の装飾が可能となります。&#xA;&#xA;実体は**textファイル**です。  &#xA;通常のtextファイルの拡張子をmdとし、編集してください。&#xA;&#xA;Dreamweaver上では、&#xA;現状markdownのプレビューができません。  &#xA;プレビューしながらの編集には&#xA;別途アプリケーションが必要となります。&#xA;&#xA;ツール例&#xA;&#xA;* [Dillinger][d11] - オンラインツール&#xA;* [MarkdownPad][d12] - Windows&#xA;* [Sublime text 3][d13] - Mac&#xA;&#xA;なお、テンプレートを用意しましたのでご利用ください。  &#xA;(\_posts/1970-01-01-template.md)&#xA;&#xA;## 見出し&#xA;\#を先頭に追加することで、見出しを表現します。&#xA;&#xA;```&#xA;  # 見出し h1&#xA;  ## 見出し h2&#xA;  ### 見出し h3&#xA;  #### 見出し h4&#xA;  ##### 見出し h5&#xA;  ###### 見出し h6&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;h1&gt;見出し h1&lt;/h1&gt;&#xA;  &lt;h2&gt;見出し h2&lt;/h2&gt;&#xA;  &lt;h3&gt;見出し h3&lt;/h3&gt;&#xA;  &lt;h4&gt;見出し h4&lt;/h4&gt;&#xA;  &lt;h5&gt;見出し h5&lt;/h5&gt;&#xA;  &lt;h6&gt;見出し h6&lt;/h6&gt;&#xA;```&#xA;&#xA;## 強調&#xA;強調を示す場合、&#xA;\*（アスタリスク）, \_（アンダースコア）の&#xA;どちから2つで囲います。&#xA;&#xA;```&#xA;  **アスタリスク**&#xA;  __アンダースコア__&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;strong&gt;アスタリスク&lt;/strong&gt;&#xA;  &lt;strong&gt;アンダースコア&lt;/strong&gt;&#xA;```&#xA;&#xA;## 段落と改行&#xA;空白行を入れると、段落となります。&#xA;また、改行は反映しません。  &#xA;強制的に改行する場合には行の最後にスペースを2つ挿入します。&#xA;&#xA;```&#xA;  amet repellendus iste quo tempore natus ab,&#xA;  blanditiis dolores.&#xA;&#xA;  aperiam odit aperiam nesciunt eligendi&#xA;&#xA;  aperiam odit aperiam__ ←スペースを2つ&#xA;  nesciunt eligendi&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;p&gt;amet repellendus iste quo tempore natus ab,&#xA;  blanditiis dolores.&lt;/p&gt;&#xA;&#xA;  &lt;p&gt;aperiam odit aperiam nesciunt eligendi&lt;/p&gt;&#xA;&#xA;  &lt;p&gt;aperiam odit aperiam&lt;br&gt;&#xA;  nesciunt eligend &lt;/p&gt;&#xA;```&#xA;&#xA;## リスト&#xA;リストを示す場合、&#xA;\*（アスタリスク）, \-（ハイフン）, \+（プラス）の&#xA;いずれかを行の先頭に記述します。&#xA;&#xA;インデントし同様に記号を記述することで入れ子も可能です。&#xA;&#xA;また、リスト項目内での改行も可能です。&#xA;&#xA;```&#xA;* 大項目1&#xA;* 大項目2&#xA;* 大項目3&#xA;  * 中項目1&#xA;  * 中項目2&#xA;  * 中項目3__ ←スペース2つ&#xA;    改行も可能です&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;&lt;ul&gt;&#xA;  &lt;li&gt;大項目1&lt;/li&gt;&#xA;  &lt;li&gt;大項目2&lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    大項目3&#xA;    &lt;ul&gt;&#xA;      &lt;li&gt;中項目1&lt;/li&gt;&#xA;      &lt;li&gt;中項目2&lt;/li&gt;&#xA;      &lt;li&gt;&#xA;        中項目3&lt;br&gt;&#xA;        改行も可能です&#xA;      &lt;/li&gt;&#xA;    &lt;/ul&gt;&#xA;  &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;```&#xA;&#xA;## 連番リスト&#xA;先頭に数字とピリオドを記述することで&#xA;連番のリストも可能です。  &#xA;なお、自動で付番されます。&#xA;&#xA;```&#xA;  1. リスト1&#xA;  1. リスト2&#xA;  1. リスト3&#xA;```&#xA;&#xA;これらは、以下のように表示されます。&#xA;&#xA;```&#xA;  1. リスト1&#xA;  2. リスト2&#xA;  3. リスト3&#xA;```&#xA;&#xA;## 引用&#xA;引用を示す場合、&#xA;先頭に&gt;を記述します。&#xA;&#xA;```&#xA;  &gt; これは&#xA;  &gt; 引用&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;blockquote&gt;&#xA;    これは引用&#xA;  &lt;/blockquote&gt;&#xA;```&#xA;&#xA;## 罫線&#xA;3つ以上の&#xA;\*（アスタリスク）, \-（ハイフン）, \_（アンダースコア）と  &#xA;半角スペースのみの行は罫線として扱われます。&#xA;&#xA;```&#xA;  ---&#xA;  --------------------&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;hr&gt;&#xA;  &lt;hr&gt;&#xA;```&#xA;&#xA;## 整形済みテキスト&#xA;preformatted text、つまり\&lt;pre\&gt;タグを示したい場合、&#xA;インデントを2つ行の先頭に記述します。&#xA;ただし、前後に空白行がない場合機能しません。&#xA;なお、グレーのバックグラウンドで装飾されます。&#xA;&#xA;```&#xA;  これは通常の文章&#xA;      こちらは整形済みテキスト&#xA;&#xA;  これは通常の文章&#xA;&#xA;      こちらは整形済みテキスト&#xA;&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;p&gt;これは通常の文章 こちらは整形済みテキスト&lt;/p&gt;&#xA;&#xA;  &lt;p&gt;これは通常の文章&lt;/p&gt;&#xA;  &lt;pre&gt;&#xA;    こちらは整形済みテキスト&#xA;  &lt;/pre&gt;&#xA;```&#xA;&#xA;## コードを記述&#xA;整形済みテキストと同様、  &#xA;\&lt;pre\&gt;タグで表現されますが、&#xA;明示的に記述したままの文章を示したい場合、  &#xA;前後に\`（バッククォート）を3つ記述します。  &#xA;なお、グレーのバックグラウンドで装飾されます。&#xA;&#xA;    ```&#xA;      function code() {&#xA;        console.log(&#39;code&#39;);&#xA;      };&#xA;    ```&#xA;&#xA;これらは、以下のように表示されます。&#xA;&#xA;```&#xA;  function code() {&#xA;    console.log(&#39;code&#39;);&#xA;  };&#xA;```&#xA;&#xA;## リンク&#xA;二通りの記述方法があります。  &#xA;なお、\_blankはなどtargetは指定できません。&#xA;&#xA;### インラインで記述する方法&#xA;角カッコ、丸カッコで囲むとリンクとなります。&#xA;&#xA;```&#xA;  [グーグル](https://www.google.com/ &#34;google&#34;)へリンクします&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;p&gt;&#xA;    &lt;a href=&#34;https://www.google.com/&#34;&gt;グーグル&lt;/a&gt;&#xA;    へリンクします&#xA;  &lt;/p&gt;&#xA;```&#xA;### まとめてリンクを記述する方法&#xA;まとめてリンクを記述する方法もあります。&#xA;メンテナンス性に優れています。&#xA;&#xA;```&#xA;  グーグルへ[リンク][1]します&#xA;&#xA;  \[1]: http://www.google.com/ &#34;google&#34; ← 先頭のバックスラッシュは必要ない&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;p&gt;&#xA;    &lt;a href=&#34;https://www.google.com/&#34; title=&#34;google&#34;&gt;グーグル&lt;/a&gt;&#xA;    へリンクします&#xA;  &lt;/p&gt;&#xA;```&#xA;&#xA;## テーブル&#xA;\|（パイプ）で区切り、複数の\-（ハイフン）の行を作成します。  &#xA;前後行に単語間を\|（パイプ）で挟んだ行を追加することで&#xA;テーブルが作成されます。&#xA;&#xA;```&#xA;  type     | file name  | extension&#xA;  -------- | ---------- | ---------&#xA;  markdown | index      | .md&#xA;  html     | index      | .html&#xA;```&#xA;&#xA;これは、以下のように表示されます。&#xA;&#xA;type     | file name  | extension&#xA;-------- | ---------- | ---------&#xA;markdown | index      | .md&#xA;html     | index      | .html&#xA;&#xA;&#xA;## エスケープ&#xA;markdown記法で影響を与えたくない場合、  &#xA;例えば、先頭に#を記述したい場合、&#xA;通常であれば見出しとなりますが、  &#xA;\（バックスラッシュ）記号を使うことで&#xA;エスケープできます。&#xA;&#xA;```&#xA;  # 見出し h1&#xA;&#xA;  \# 見出し h1&#xA;```&#xA;&#xA;これらは、以下のようなHTMLに出力されます。&#xA;&#xA;```&#xA;  &lt;h1&gt;見出し h1&lt;/h1&gt;&#xA;&#xA;  &lt;p&gt;# 見出し h1&lt;/p&gt;&#xA;```&#xA;&#xA;&#xA;## CSS&#xA;より複雑な装飾が必要な場合、&#xA;HTMLタグ、CSSによる記述も可能です。&#xA;&#xA;```&#xA;  &lt;div class=&#34;alert alert-danger&#34;&gt;&#xA;    この箇所はcssで装飾されています&#xA;  &lt;/div&gt;&#xA;```&#xA;&#xA;これは、以下のように表示されます。&#xA;&#xA;&lt;div class=&#34;alert alert-danger&#34;&gt;&#xA;  この箇所はcssで装飾されています&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;## このサイト特有のルール&#xA;* 見出しにh6は使用していません&#xA;* 罫線は多用せず、h3の下のみに使用（例外あり）&#xA;* リストは\*（アスタリスク）のみ使用しています&#xA;* 強調は\*（アスタリスク）のみ使用しています&#xA;* 整形済みテキストをコードの表現だけではなく注意書きにも使用しています&#xA;* リンクは基本的にファイルの最下行にまとめて記載&#xA;* スクリプトによりPDFへのリンクのみ別タブで開くようになります&#xA;* テーブルはcssにより横区切り線がないもののみ使用しています&#xA;* なるべくcssは使用しません&#xA;&#xA;&#xA;[d11]: http://dillinger.io/ &#34;Dillinger&#34;&#xA;[d12]: http://markdownpad.com/ &#34;MarkdownPad&#34;&#xA;[d13]: http://www.sublimetext.com/ &#34;Sublime Text&#34;&#xA;</description>
+    </item>
+    
+    <item>
+      <title>ヒアリング議事録</title>
+      <link>/meeting/2020/01/01/mytitle.html</link>
+      <guid isPermaLink="false">tag:vim-jp.org,2020/00/01:/meeting/2020/01/01/mytitle.html,rev:1</guid>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
+      <author>vim-jp</author>
+      <description>&#xA;# タイトル&#xA;&#xA;## 内容&#xA;&#xA;### 内容1&#xA;------------------------------------------------------------&#xA;内容詳細&#xA;</description>
+    </item>
+    
+    <item>
+      <title>進捗報告01</title>
+      <link>/logs/2020/01/01/log-001.html</link>
+      <guid isPermaLink="false">tag:vim-jp.org,2020/00/01:/logs/2020/01/01/log-001.html,rev:1</guid>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
+      <author>vim-jp</author>
+      <description>&#xA;# 2020年01月01日-05日&#xA;&#xA;## 各チーム作業内容&#xA;&#xA;### インフラ&#xA;------------------------------------------------------------&#xA;インフラ詳細&#xA;&#xA;### システム&#xA;------------------------------------------------------------&#xA;システム詳細&#xA;&#xA;### デザイン&#xA;------------------------------------------------------------&#xA;デザイン詳細&#xA;&#xA;### プロジェクト管理&#xA;------------------------------------------------------------&#xA;プロジェクト管理&#xA;&#xA;#### 定期打ち合わせ&#xA;今週は未実施&#xA;&#xA;## 今週発生した作業&#xA;作業詳細&#xA;&#xA;## 現在のプロジェクト課題&#xA;概要詳細&#xA;</description>
+    </item>
+    
+    <item>
+      <title>ヒアリング議事録</title>
+      <link>/meeting/2020/01/01/meeting001.html</link>
+      <guid isPermaLink="false">tag:vim-jp.org,2020/00/01:/meeting/2020/01/01/meeting001.html,rev:1</guid>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0900</pubDate>
+      <author>vim-jp</author>
+      <description>&#xA;# ヒアリング議事録&#xA;&#xA;項目名        | 内容&#xA;------------- | -------------&#xA;クライアント  | abc社様&#xA;日時          | 2020年 1月1日 火曜日曜日 13時00分&#xA;場所          | abc社様 会議室&#xA;プロジェクト  | サイトリニューアル&#xA;参加者        | abc社様 小林様&lt;br&gt;dev: 小林&#xA;&#xA;&#xA;## 備忘録&#xA;* 1080pxのページサイズで作成&#xA;&#xA;&#xA;## 議事録&#xA;&#xA;### 打ち合わせ内容1&#xA;------------------------------------------------------------&#xA;打ち合わせ内容詳細&#xA;&#xA;### 資料&#xA;------------------------------------------------------------&#xA;#### 打合せ中   - ご提供資料&#xA;* 資料1&#xA;&#xA;#### 打合せ後   - ご提供予定資料&#xA;* 資料1&#xA;&#xA;#### 次回打合せ - ご提供予定資料&#xA;* 資料1&#xA;&#xA;#### 打合せ後   - 提出物&#xA;* 資料1&#xA;&#xA;### スケジュール&#xA;------------------------------------------------------------&#xA;#### 納期&#xA;納期詳細&#xA;&#xA;#### 次回打合せ&#xA;5月13日金曜日 14:00  &#xA;&#xA;### 資料リンク&#xA;------------------------------------------------------------&#xA;* [競合サイト比較書][l21] (2020/01/01更新)&#xA;&#xA;[l21]:http://www.anagift.com/&#xA;</description>
+    </item>
+    
+  </channel> 
+</rss>

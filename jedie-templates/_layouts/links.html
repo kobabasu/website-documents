@@ -1,0 +1,54 @@
+---
+layout:   default
+title:    "links layout"
+category: links
+---
+
+<!-- main -->
+  <section
+    id="links"
+    class="
+      container-fliud
+      text-center
+      doc-cover
+      doc-yellow"
+    role="main">
+    <h1>
+      <span class="glyphicon glyphicon-link"></span>
+      links
+    </h1>
+    <p class="lead">外部サービスへのリンク</p>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div id="content" class="col-md-8">
+        {{ content }}
+      </div>
+
+      <div class="col-md-4">
+        <div class="list-group">
+          <p class="
+            list-group-item
+            disabled
+            doc-bg-yellow
+            ">現在公開されているサイト</p>
+
+          <a
+            href="{{SITE_URL}}"
+            target="_blank"
+            class="list-group-item">
+            {{SITE_NAME}}
+          </a>
+        </div>
+
+        <div class="list-group">
+          {% for post in site.categories.links %}
+          <a href="{{ post.url }}" class="list-group-item">
+            {{ post.title }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
