@@ -1,5 +1,8 @@
 .DS_Store
 .sass-cache
+Result
+npm-debug.log
+public/rss.xml
 
 public/vendor/*
 public/js/*
