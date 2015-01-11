@@ -1,7 +1,7 @@
 module.exports = (grunt) ->
 
   cwd = process.cwd()
-  process.chdir('../../../')
+  process.chdir('../../')
   grunt.loadNpmTasks 'grunt-este-watch'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-requirejs'
@@ -15,7 +15,7 @@ module.exports = (grunt) ->
   process.chdir(cwd)
 
   grunt.initConfig
-    pkg: grunt.file.readJSON '../../../package.json'
+    pkg: grunt.file.readJSON '../../package.json'
 
     coffee:
       src:

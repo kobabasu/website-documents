@@ -1,8 +1,13 @@
 .DS_Store
 .sass-cache
+coverage
+Result
+npm-debug.log
+public/rss.xml
 
 public/vendor/*
 public/js/*
+public/assets/css/*
 public/doc/*
 public/test/*
 public/spec/*
