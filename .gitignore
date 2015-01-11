@@ -7,7 +7,7 @@ public/rss.xml
 
 public/vendor/*
 public/js/*
-public/assets/*
+public/assets/css/*
 public/doc/*
 public/test/*
 public/spec/*
